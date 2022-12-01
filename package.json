@@ -1,0 +1,26 @@
+{
+  "name": "wonderful_meal",
+  "version": "1.0.0",
+  "description": "An online food-ordering website.",
+  "main": "index.js",
+  "scripts": {
+    "build": "cd backend && npm install && cd ../frontend && npm install && npm run build",
+    "start": "node backend/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tomtianau/wonderful_meal.git"
+  },
+  "keywords": [
+    "Online",
+    "order",
+    "food"
+  ],
+  "author": "SHUO TIAN",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tomtianau/wonderful_meal/issues"
+  },
+  "homepage": "https://github.com/Tomtianau/wonderful_meal#readme"
+}

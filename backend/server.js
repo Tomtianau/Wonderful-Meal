@@ -1,6 +1,7 @@
 import express from 'express';
 import mongoose from 'mongoose';
 import dotenv from 'dotenv';
+import path from 'path';
 import mainCourseRouter from './routes/mainCourseRoutes.js';
 import sideDishesRouter from './routes/sideDishesRoutes.js';
 import drinksRouter from './routes/drinksRoutes.js';
@@ -39,6 +40,12 @@ app.use('/api/insertData', insertDataRouter);
 app.use('/api/users', userRouter);
 app.use('/api/pickUp', pickUpRouter);
 app.use('/api/orders', orderRouter);
+
+const __dirname = path.resolve();
+app.use(express.static(path.join(__dirname, '/frontend/build')));
+app.get('*', (req, res) =>
+  res.sendFile(path.join(__dirname, '/frontend/build/index.html'))
+);
 
 const port = process.env.PORT || 5000;
 app.listen(port, () => {
