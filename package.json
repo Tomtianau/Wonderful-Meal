@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Tomtianau/wonderful_meal.git"
+    "url": "git+https://github.com/Tomtianau/Wonderful-Meal.git"
   },
   "keywords": [
     "Online",
@@ -20,7 +20,7 @@
   "author": "SHUO TIAN",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Tomtianau/wonderful_meal/issues"
+    "url": "https://github.com/Tomtianau/Wonderful-Meal/issues"
   },
-  "homepage": "https://github.com/Tomtianau/wonderful_meal#readme"
+  "homepage": "https://github.com/Tomtianau/Wonderful-Meal#readme"
 }
